@@ -64,7 +64,6 @@ int main(){
     const int nclie = {8};
     //Punto 1
     float pesos[nclie][ntprod] = {};
-    int list[nclie][ntprod];
     //Punto 2
     float km[nclie][ntprod] = {};
     int maxprod;
@@ -91,7 +90,7 @@ int main(){
     string producto[ntprod];//nombre del producto
     //lectura archivo nombres
 
-    adatos.open("Datos.txt");
+    adatos.open("Nombres.txt");
     if(!adatos){
         cout << "Error al abrir el archivo" <<endl;
         return 1;
@@ -122,7 +121,7 @@ int main(){
         }
     }
     listasce(pmax, ntprod, v);
-    cout <<"Listado de Km recorridos por tipo de producto (ascendente):" << endl;\
+    cout <<"Listado de Km recorridos por tipo de producto (ascendente):" << endl;
     mostrarprodmax(pmax, ntprod, producto, v);
     //Punto 3
     cout << "Cantidad de entregas para el tipo de producto Textiles: " << entregas[3] <<endl;
