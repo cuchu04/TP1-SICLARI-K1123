@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../TP 1 - SICLARI"
+		}
+	],
+    "settings": {
+        "files.associations": {
+            "ostream": "cpp",
+            "iostream": "cpp"
+        }
+    }
+}
